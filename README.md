@@ -1,22 +1,22 @@
-# 🚀 PyG Dardel - Unlocking PyTorch Geometric on HPC
+# PyTorch Geometric ROCm Installation for HPC Dardel
 
-**Bringing Graph Neural Networks to AMD GPUs** — Automated PyTorch Geometric installation with ROCm support for [HPC Dardel](https://www.pdc.kth.se/hpc-services/computing-systems/dardel) and beyond.
+Automated PyTorch Geometric installation with ROCm support for [HPC Dardel](https://www.pdc.kth.se/hpc-services/computing-systems/dardel) and compatible Cray systems.
 
-## 💡 The Challenge
+## Problem Statement
 
-[PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric) doesn't officially support AMD ROCm out of the box. While the PyG team maintains CUDA builds, ROCm users face a complex compilation process. Existing community solutions like [Looong01's ROCm builds](https://github.com/Looong01/pyg-rocm-build) target Ubuntu 22 with newer compilers, making them incompatible with HPC environments running older toolchains.
+[PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric) does not officially support AMD ROCm. While the PyG team maintains CUDA builds, ROCm users must compile extensions from source. Existing community solutions like [Looong01's ROCm builds](https://github.com/Looong01/pyg-rocm-build) target Ubuntu 22 with newer compilers, making them incompatible with HPC environments running older toolchains.
 
-## 🎯 What This Solves
+## Solution
 
-This project addresses the HPC-specific challenges by providing:
+This repository provides HPC-specific PyG installation tools:
 
-- **🔧 HPC-Compatible Wheels**: Pre-built extensions compiled specifically for Cray systems with older compilers
-- **⚡ AMD GPU Acceleration**: Full PyG functionality on MI250X with ROCm 6.3.3
-- **📦 Complete Environment**: Ready-to-use conda setup that just works on HPC infrastructure
-- **🧪 Comprehensive Testing**: Verify your installation works with real GNN workloads
-- **🏗️ Reproducible Build System**: Scripts to rebuild wheels for your specific environment
+- **HPC-Compatible Wheels**: Pre-built extensions compiled for Cray systems with older compilers
+- **AMD GPU Support**: Full PyG functionality on MI250X with ROCm 6.3.3
+- **Complete Environment**: Conda setup configured for HPC infrastructure
+- **Testing Suite**: Validation tools for GNN workloads
+- **Build Scripts**: Reproducible wheel building for custom environments
 
-> **The Key Innovation**: While community wheels exist for Ubuntu, HPC systems require wheels built with compatible compiler toolchains. This repository solves that compatibility gap.
+HPC systems require wheels built with compatible compiler toolchains. This repository addresses that compatibility requirement.
 
 ## Repository Contents
 
@@ -83,7 +83,7 @@ python your_script.py
 ### Testing Installation
 ```bash
 # Quick verification
-python -c "import torch, torch_geometric; print('✓ PyG installation successful!')"
+python -c "import torch, torch_geometric; print('PyG installation successful')"
 
 # Comprehensive testing
 python test_pyg_rocm.py
@@ -117,11 +117,11 @@ The goal is to lower the barrier for HPC researchers wanting to explore Graph Ne
 
 ## Acknowledgments
 
-- PyTorch Geometric team for the incredible [PyG framework](https://github.com/pyg-team/pytorch_geometric)
+- PyTorch Geometric team for the [PyG framework](https://github.com/pyg-team/pytorch_geometric)
 - [@Looong01](https://github.com/Looong01) for maintaining [ROCm-compiled PyG wheels](https://github.com/Looong01/pyg-rocm-build)
 - PDC Center for High Performance Computing for providing Dardel infrastructure
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This repository provides installation scripts and pre-built wheels for educational and research purposes. Please note:
 
@@ -133,7 +133,7 @@ This repository provides installation scripts and pre-built wheels for education
 
 For production use, always test thoroughly in your environment first.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
