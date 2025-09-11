@@ -121,6 +121,22 @@ The goal is to lower the barrier for HPC researchers wanting to explore Graph Ne
 - [@Looong01](https://github.com/Looong01) for maintaining [ROCm-compiled PyG wheels](https://github.com/Looong01/pyg-rocm-build)
 - PDC Center for High Performance Computing for providing Dardel infrastructure
 
+## ⚠️ Disclaimer
+
+This repository provides installation scripts and pre-built wheels for educational and research purposes. Please note:
+
+- **No Warranty**: This software is provided "as is" without any warranties or guarantees
+- **HPC Specificity**: Scripts are tailored for HPC Dardel and may require modifications for other systems
+- **Pre-built Wheels**: The included wheels are compiled from open source PyG extensions but are not officially supported by the PyG team
+- **System Requirements**: Ensure you have proper permissions and allocations before running HPC installations
+- **Use at Your Own Risk**: Users are responsible for verifying compatibility with their specific HPC environment
+
+For production use, always test thoroughly in your environment first.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 
 *Developed at KTH Royal Institute of Technology*
