@@ -168,12 +168,6 @@ sbatch test_pyg_rocm.slurm
 
 This work bridges the gap between PyTorch Geometric's CUDA-centric ecosystem and AMD ROCm on HPC systems by providing compiler-compatible wheels and complete installation workflows for Cray environments.
 
-## Acknowledgments
-
-- PyTorch Geometric team for the [PyG framework](https://github.com/pyg-team/pytorch_geometric)
-- [@Looong01](https://github.com/Looong01) for maintaining [ROCm-compiled PyG wheels](https://github.com/Looong01/pyg-rocm-build)
-- PDC Center for High Performance Computing for providing Dardel infrastructure
-
 ## Disclaimer
 
 This repository provides installation scripts and pre-built wheels for educational and research purposes. Please note:
